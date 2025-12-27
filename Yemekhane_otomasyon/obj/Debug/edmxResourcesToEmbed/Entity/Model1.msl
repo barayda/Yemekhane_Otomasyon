@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBYemekhaneModelStoreContainer" CdmEntityContainer="DBYemekhaneEntities">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departmanlar">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.Departmanlar">
+        <MappingFragment StoreEntitySet="Departmanlar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GorevDetaylar">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.GorevDetaylar">
+        <MappingFragment StoreEntitySet="GorevDetaylar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gorev" ColumnName="Gorev" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gorevler">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.Gorevler">
+        <MappingFragment StoreEntitySet="Gorevler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GörevVeren" ColumnName="GörevVeren" />
+          <ScalarProperty Name="GörevAlan" ColumnName="GörevAlan" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personel">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.Personel">
+        <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Görsel" ColumnName="Görsel" />
+          <ScalarProperty Name="Departman" ColumnName="Departman" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yemekhaneler">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.Yemekhaneler">
+        <MappingFragment StoreEntitySet="Yemekhaneler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Yetkili" ColumnName="Yetkili" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Sektör" ColumnName="Sektör" />
+          <ScalarProperty Name="İl" ColumnName="İl" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

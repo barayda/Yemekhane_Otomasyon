@@ -17,6 +17,25 @@ namespace Yemekhane_otomasyon
             InitializeComponent();
         }
 
-     
+        private void btnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmDepartman frm = new Forms.FrmDepartman();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Forms.FrmPersoneller frm = new Forms.FrmPersoneller();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void BtnPersonelIstatistikleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           Forms.FrmPersonelIstatistik frm=new Forms.FrmPersonelIstatistik();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
