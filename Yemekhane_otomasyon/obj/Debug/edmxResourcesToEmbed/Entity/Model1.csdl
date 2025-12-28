@@ -35,7 +35,7 @@
     <Property Name="GörevVeren" Type="Int32" />
     <Property Name="GörevAlan" Type="Int32" />
     <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-    <Property Name="Durum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Durum" Type="Boolean" />
     <Property Name="Tarih" Type="DateTime" Precision="0" />
     <NavigationProperty Name="GorevDetaylar" Relationship="Self.FK_GorevDetaylar_Gorevler" FromRole="Gorevler" ToRole="GorevDetaylar" />
     <NavigationProperty Name="Personel" Relationship="Self.FK_Gorevler_Personel" FromRole="Gorevler" ToRole="Personel" />
@@ -142,5 +142,47 @@
       <End Role="Personel" EntitySet="Personel" />
       <End Role="Gorevler" EntitySet="Gorevler" />
     </AssociationSet>
+    <EntitySet Name="Menü" EntityType="DBYemekhaneModel.Menü" />
+    <EntitySet Name="Ogün" EntityType="DBYemekhaneModel.Ogün" />
+    <AssociationSet Name="FK_Menü_Ogün" Association="DBYemekhaneModel.FK_Menü_Ogün">
+      <End Role="Ogün" EntitySet="Ogün" />
+      <End Role="Menü" EntitySet="Menü" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="Menü">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AnaYemek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tarih" Type="DateTime" Precision="0" />
+    <Property Name="OgunID" Type="Int32" />
+    <Property Name="YanYemek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AraSıcak" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tatli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Maliyet" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Ogün" Relationship="DBYemekhaneModel.FK_Menü_Ogün" FromRole="Menü" ToRole="Ogün" />
+  </EntityType>
+  <EntityType Name="Ogün">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BaslangicSaati" Type="Time" Precision="7" />
+    <Property Name="BitisSaati" Type="Time" Precision="7" />
+    <NavigationProperty Name="Menü" Relationship="DBYemekhaneModel.FK_Menü_Ogün" FromRole="Ogün" ToRole="Menü" />
+  </EntityType>
+  <Association Name="FK_Menü_Ogün">
+    <End Type="DBYemekhaneModel.Ogün" Role="Ogün" Multiplicity="0..1" />
+    <End Type="DBYemekhaneModel.Menü" Role="Menü" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogün">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Menü">
+        <PropertyRef Name="OgunID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

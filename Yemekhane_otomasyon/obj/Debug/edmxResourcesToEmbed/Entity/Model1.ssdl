@@ -33,8 +33,30 @@
     <Property Name="GörevVeren" Type="int" />
     <Property Name="GörevAlan" Type="int" />
     <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
-    <Property Name="Durum" Type="nvarchar" MaxLength="20" />
+    <Property Name="Durum" Type="bit" />
     <Property Name="Tarih" Type="date" />
+  </EntityType>
+  <EntityType Name="Menü">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AnaYemek" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="OgunID" Type="int" />
+    <Property Name="YanYemek" Type="nvarchar" MaxLength="50" />
+    <Property Name="AraSıcak" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tatli" Type="nvarchar" MaxLength="50" />
+    <Property Name="Maliyet" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Ogün">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="BaslangicSaati" Type="time" Precision="7" />
+    <Property Name="BitisSaati" Type="time" Precision="7" />
   </EntityType>
   <EntityType Name="Personel">
     <Key>
@@ -99,6 +121,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Menü_Ogün">
+    <End Role="Ogün" Type="Self.Ogün" Multiplicity="0..1" />
+    <End Role="Menü" Type="Self.Menü" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogün">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Menü">
+        <PropertyRef Name="OgunID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Personel_Departmanlar">
     <End Role="Departmanlar" Type="Self.Departmanlar" Multiplicity="0..1" />
     <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
@@ -116,6 +150,8 @@
     <EntitySet Name="Departmanlar" EntityType="Self.Departmanlar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GorevDetaylar" EntityType="Self.GorevDetaylar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gorevler" EntityType="Self.Gorevler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menü" EntityType="Self.Menü" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ogün" EntityType="Self.Ogün" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Yemekhaneler" EntityType="Self.Yemekhaneler" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_GorevDetaylar_Gorevler" Association="Self.FK_GorevDetaylar_Gorevler">
@@ -129,6 +165,10 @@
     <AssociationSet Name="FK_Gorevler_Personel1" Association="Self.FK_Gorevler_Personel1">
       <End Role="Personel" EntitySet="Personel" />
       <End Role="Gorevler" EntitySet="Gorevler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menü_Ogün" Association="Self.FK_Menü_Ogün">
+      <End Role="Ogün" EntitySet="Ogün" />
+      <End Role="Menü" EntitySet="Menü" />
     </AssociationSet>
     <AssociationSet Name="FK_Personel_Departmanlar" Association="Self.FK_Personel_Departmanlar">
       <End Role="Departmanlar" EntitySet="Departmanlar" />

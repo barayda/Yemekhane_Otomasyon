@@ -16,26 +16,72 @@ namespace Yemekhane_otomasyon
         {
             InitializeComponent();
         }
-
+        Forms.FrmDepartman frm1;
         private void btnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmDepartman frm = new Forms.FrmDepartman();
-            frm.MdiParent = this;
-            frm.Show();
+            if (frm1 == null || frm1.IsDisposed) { 
+            frm1=new Forms.FrmDepartman();
+            frm1.MdiParent = this;
+            frm1.Show();
+            }
         }
-
+        Forms.FrmPersoneller frm2;
         private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Forms.FrmPersoneller frm = new Forms.FrmPersoneller();
-            frm.MdiParent = this;
-            frm.Show();
+            if (frm2 == null || frm2.IsDisposed) { 
+            frm2=new Forms.FrmPersoneller();
+            frm2.MdiParent = this;
+            frm2.Show();
+            }
         }
-
+        Forms.FrmPersonelIstatistik frm3;
         private void BtnPersonelIstatistikleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           Forms.FrmPersonelIstatistik frm=new Forms.FrmPersonelIstatistik();
-            frm.MdiParent = this;
-            frm.Show();
+            if (frm3 == null || frm3.IsDisposed) { 
+            frm3=new Forms.FrmPersonelIstatistik();
+            frm3.MdiParent = this;
+            frm3.Show();
+            }
+        }
+        Forms.FrmGörevListesi frm4;
+        private void BtnGörevListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm4 == null || frm4.IsDisposed)
+            {
+                frm4=new Forms.FrmGörevListesi();
+                new Forms.FrmGörevListesi();
+                frm4.MdiParent = this;
+                frm4.Show();
+            }
+        }
+        Forms.FrmGörev frm5;
+        private void BtnGörevTanimla_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm5 == null || frm5.IsDisposed)
+            {
+                frm5 = new Forms.FrmGörev();
+                frm5.Show();
+            }
+        }
+        Forms.FrmGorevDetay frm6;
+        private void BtnGörevDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm6 == null || frm6.IsDisposed) 
+            {
+               frm6=new Forms.FrmGorevDetay(); 
+               frm6.MdiParent = this;   
+               frm6.Show();
+            }
+        }
+        Forms.FrmAnaForm frm7;
+        private void BtnAnaForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm7 == null || frm7.IsDisposed)
+            {
+                frm7 = new Forms.FrmAnaForm();
+                frm7.MdiParent = this;
+                frm7.Show();
+            }
         }
     }
 }
