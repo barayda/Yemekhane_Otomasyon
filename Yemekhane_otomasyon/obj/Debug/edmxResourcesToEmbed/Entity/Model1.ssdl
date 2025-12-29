@@ -47,7 +47,10 @@
     <Property Name="YanYemek" Type="nvarchar" MaxLength="50" />
     <Property Name="AraSıcak" Type="nvarchar" MaxLength="50" />
     <Property Name="Tatli" Type="nvarchar" MaxLength="50" />
+    <Property Name="Salata" Type="nvarchar" MaxLength="50" />
     <Property Name="Maliyet" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Kapasite" Type="int" />
+    <Property Name="YiyenKisiSayisi" Type="int" />
   </EntityType>
   <EntityType Name="Ogün">
     <Key>

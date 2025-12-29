@@ -147,6 +147,18 @@
     <Compile Include="Forms\FrmGörevListesi.Designer.cs">
       <DependentUpon>FrmGörevListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmMenuEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenuEkle.Designer.cs">
+      <DependentUpon>FrmMenuEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMenüListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenüListele.Designer.cs">
+      <DependentUpon>FrmMenüListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmPersonelIstatistik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +190,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmGörevListesi.resx">
       <DependentUpon>FrmGörevListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenuEkle.resx">
+      <DependentUpon>FrmMenuEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenüListele.resx">
+      <DependentUpon>FrmMenüListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmPersonelIstatistik.resx">
       <DependentUpon>FrmPersonelIstatistik.cs</DependentUpon>

@@ -52,7 +52,10 @@
           <Property Name="YanYemek" Type="nvarchar" MaxLength="50" />
           <Property Name="AraSıcak" Type="nvarchar" MaxLength="50" />
           <Property Name="Tatli" Type="nvarchar" MaxLength="50" />
+          <Property Name="Salata" Type="nvarchar" MaxLength="50" />
           <Property Name="Maliyet" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Kapasite" Type="int" />
+          <Property Name="YiyenKisiSayisi" Type="int" />
         </EntityType>
         <EntityType Name="Ogün">
           <Key>
@@ -346,6 +349,9 @@
           <Property Name="Tatli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Maliyet" Type="Decimal" Precision="18" Scale="2" />
           <NavigationProperty Name="Ogün" Relationship="DBYemekhaneModel.FK_Menü_Ogün" FromRole="Menü" ToRole="Ogün" />
+          <Property Name="Salata" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kapasite" Type="Int32" />
+          <Property Name="YiyenKisiSayisi" Type="Int32" />
         </EntityType>
         <EntityType Name="Ogün">
           <Key>
@@ -447,6 +453,9 @@
           <EntitySetMapping Name="Menü">
             <EntityTypeMapping TypeName="DBYemekhaneModel.Menü">
               <MappingFragment StoreEntitySet="Menü">
+                <ScalarProperty Name="YiyenKisiSayisi" ColumnName="YiyenKisiSayisi" />
+                <ScalarProperty Name="Kapasite" ColumnName="Kapasite" />
+                <ScalarProperty Name="Salata" ColumnName="Salata" />
                 <ScalarProperty Name="Maliyet" ColumnName="Maliyet" />
                 <ScalarProperty Name="Tatli" ColumnName="Tatli" />
                 <ScalarProperty Name="AraSıcak" ColumnName="AraSıcak" />

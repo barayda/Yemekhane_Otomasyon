@@ -20,12 +20,14 @@ namespace Yemekhane_otomasyon.Forms
         DBYemekhaneEntities db= new DBYemekhaneEntities();
         private void FrmGörevListesi_Load(object sender, EventArgs e)
         {
-           gridControl1.DataSource = (from x in db.Gorevler
+           gridCtrl1.DataSource = (from x in db.Gorevler
                                        select new
                                        {          
-                                           Görevi_veren = x.Personel.Ad + " " + x.Personel.Soyad,
-                                           x.Aciklama,
-                                           Görevi_alan=x.Personel1.Ad+" "+x.Personel1.Soyad
+                                          x.ID,
+                                          GörevVeren = x.Personel.Ad+" "+x.Personel.Soyad,
+                                          x.Aciklama,
+                                         GörevAlan=x.Personel.Ad+" "+x.Personel.Soyad,
+                                         Durum= x.Durum==true ? "Aktif" :"Pasif"
                                        }).ToList();
 
 

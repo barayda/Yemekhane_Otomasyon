@@ -162,6 +162,9 @@
     <Property Name="Tatli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Maliyet" Type="Decimal" Precision="18" Scale="2" />
     <NavigationProperty Name="Ogün" Relationship="DBYemekhaneModel.FK_Menü_Ogün" FromRole="Menü" ToRole="Ogün" />
+    <Property Name="Salata" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kapasite" Type="Int32" />
+    <Property Name="YiyenKisiSayisi" Type="Int32" />
   </EntityType>
   <EntityType Name="Ogün">
     <Key>

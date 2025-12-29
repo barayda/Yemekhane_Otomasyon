@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGörevListesi));
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridCtrl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.LblToplamDepartman = new DevExpress.XtraEditors.LabelControl();
@@ -46,7 +46,7 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCtrl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -62,19 +62,19 @@
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridControl1
+            // gridCtrl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(1, 0);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(361, 345);
-            this.gridControl1.TabIndex = 1;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridCtrl1.Location = new System.Drawing.Point(1, 0);
+            this.gridCtrl1.MainView = this.gridView1;
+            this.gridCtrl1.Name = "gridCtrl1";
+            this.gridCtrl1.Size = new System.Drawing.Size(370, 345);
+            this.gridCtrl1.TabIndex = 1;
+            this.gridCtrl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
-            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GridControl = this.gridCtrl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
@@ -86,7 +86,7 @@
             this.panelControl1.Controls.Add(this.LblToplamDepartman);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.pictureEdit1);
-            this.panelControl1.Location = new System.Drawing.Point(368, 0);
+            this.panelControl1.Location = new System.Drawing.Point(377, 0);
             this.panelControl1.LookAndFeel.SkinName = "DevExpress Style";
             this.panelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl1.Name = "panelControl1";
@@ -239,15 +239,17 @@
             // 
             // chartControl1
             // 
-            this.chartControl1.Location = new System.Drawing.Point(368, 111);
+            this.chartControl1.Location = new System.Drawing.Point(377, 111);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Aspect";
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series1.LegendTextPattern = "{A}";
             series1.Name = "Durum";
             series1.SeriesID = 3;
             series1.View = pieSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartControl1.Size = new System.Drawing.Size(595, 234);
+            this.chartControl1.Size = new System.Drawing.Size(586, 234);
             this.chartControl1.TabIndex = 5;
             // 
             // FrmGörevListesi
@@ -259,11 +261,11 @@
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.gridCtrl1);
             this.Name = "FrmGörevListesi";
             this.Text = "Görev Listesi";
             this.Load += new System.EventHandler(this.FrmGörevListesi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCtrl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
@@ -286,7 +288,7 @@
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gridCtrl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;

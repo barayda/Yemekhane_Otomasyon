@@ -78,3 +78,5 @@ C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\bin\De
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.FrmGörev.resources
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.FrmGorevDetay.resources
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.FrmAnaForm.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.FrmMenüListele.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.FrmMenuEkle.resources
