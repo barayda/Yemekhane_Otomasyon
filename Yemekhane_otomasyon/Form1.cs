@@ -103,5 +103,15 @@ namespace Yemekhane_otomasyon
                 frm9.Show();
             }
         }
+        Forms.FrmMenuIstatistik frm10;
+        private void BtnMenuIstatistikleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm10 == null || frm10.IsDisposed)
+            {
+                frm10 = new Forms.FrmMenuIstatistik();
+                frm10.MdiParent = this;
+                frm10.Show();
+            }
+        }
     }
 }

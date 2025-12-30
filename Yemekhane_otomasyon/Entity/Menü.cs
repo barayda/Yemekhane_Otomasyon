@@ -25,6 +25,10 @@ namespace Yemekhane_otomasyon.Entity
         public string Salata { get; set; }
         public Nullable<int> Kapasite { get; set; }
         public Nullable<int> YiyenKisiSayisi { get; set; }
+        public Nullable<decimal> Satis { get; set; }
+        public Nullable<decimal> ToplamMaliyet { get; set; }
+        public Nullable<decimal> ToplamKazanc { get; set; }
+        public Nullable<decimal> KarZarar { get; set; }
     
         public virtual Ogün Ogün { get; set; }
     }

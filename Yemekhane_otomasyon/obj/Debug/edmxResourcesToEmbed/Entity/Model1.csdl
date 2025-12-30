@@ -165,6 +165,10 @@
     <Property Name="Salata" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Kapasite" Type="Int32" />
     <Property Name="YiyenKisiSayisi" Type="Int32" />
+    <Property Name="Satis" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ToplamMaliyet" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ToplamKazanc" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="KarZarar" Type="Decimal" Precision="18" Scale="2" />
   </EntityType>
   <EntityType Name="Ogün">
     <Key>

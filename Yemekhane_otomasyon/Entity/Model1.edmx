@@ -53,9 +53,13 @@
           <Property Name="AraSıcak" Type="nvarchar" MaxLength="50" />
           <Property Name="Tatli" Type="nvarchar" MaxLength="50" />
           <Property Name="Salata" Type="nvarchar" MaxLength="50" />
+          <Property Name="Satis" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Maliyet" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Kapasite" Type="int" />
           <Property Name="YiyenKisiSayisi" Type="int" />
+          <Property Name="ToplamMaliyet" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ToplamKazanc" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="KarZarar" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Ogün">
           <Key>
@@ -352,6 +356,10 @@
           <Property Name="Salata" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Kapasite" Type="Int32" />
           <Property Name="YiyenKisiSayisi" Type="Int32" />
+          <Property Name="Satis" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ToplamMaliyet" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ToplamKazanc" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="KarZarar" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Ogün">
           <Key>
@@ -453,6 +461,10 @@
           <EntitySetMapping Name="Menü">
             <EntityTypeMapping TypeName="DBYemekhaneModel.Menü">
               <MappingFragment StoreEntitySet="Menü">
+                <ScalarProperty Name="KarZarar" ColumnName="KarZarar" />
+                <ScalarProperty Name="ToplamKazanc" ColumnName="ToplamKazanc" />
+                <ScalarProperty Name="ToplamMaliyet" ColumnName="ToplamMaliyet" />
+                <ScalarProperty Name="Satis" ColumnName="Satis" />
                 <ScalarProperty Name="YiyenKisiSayisi" ColumnName="YiyenKisiSayisi" />
                 <ScalarProperty Name="Kapasite" ColumnName="Kapasite" />
                 <ScalarProperty Name="Salata" ColumnName="Salata" />

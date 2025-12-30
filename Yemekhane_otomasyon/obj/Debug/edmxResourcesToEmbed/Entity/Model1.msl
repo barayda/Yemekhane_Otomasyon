@@ -73,6 +73,10 @@
     <EntitySetMapping Name="Menü">
       <EntityTypeMapping TypeName="DBYemekhaneModel.Menü">
         <MappingFragment StoreEntitySet="Menü">
+          <ScalarProperty Name="KarZarar" ColumnName="KarZarar" />
+          <ScalarProperty Name="ToplamKazanc" ColumnName="ToplamKazanc" />
+          <ScalarProperty Name="ToplamMaliyet" ColumnName="ToplamMaliyet" />
+          <ScalarProperty Name="Satis" ColumnName="Satis" />
           <ScalarProperty Name="YiyenKisiSayisi" ColumnName="YiyenKisiSayisi" />
           <ScalarProperty Name="Kapasite" ColumnName="Kapasite" />
           <ScalarProperty Name="Salata" ColumnName="Salata" />

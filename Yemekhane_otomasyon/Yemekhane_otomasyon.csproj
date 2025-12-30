@@ -72,6 +72,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBYemekhaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBYemekhaneDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entity\Admin.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -153,6 +158,12 @@
     <Compile Include="Forms\FrmMenuEkle.Designer.cs">
       <DependentUpon>FrmMenuEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmMenuIstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenuIstatistik.Designer.cs">
+      <DependentUpon>FrmMenuIstatistik.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmMenüListele.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +181,24 @@
     </Compile>
     <Compile Include="Forms\FrmPersoneller.Designer.cs">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuIstatistikGrafikleri\PastaGrafik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuIstatistikGrafikleri\PastaGrafik.Designer.cs">
+      <DependentUpon>PastaGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuIstatistikGrafikleri\SutunGrafik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuIstatistikGrafikleri\SutunGrafik.Designer.cs">
+      <DependentUpon>SutunGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuIstatistikGrafikleri\SütunGrafik1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuIstatistikGrafikleri\SütunGrafik1.Designer.cs">
+      <DependentUpon>SütunGrafik1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -194,6 +223,9 @@
     <EmbeddedResource Include="Forms\FrmMenuEkle.resx">
       <DependentUpon>FrmMenuEkle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenuIstatistik.resx">
+      <DependentUpon>FrmMenuIstatistik.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMenüListele.resx">
       <DependentUpon>FrmMenüListele.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +234,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmPersoneller.resx">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuIstatistikGrafikleri\PastaGrafik.resx">
+      <DependentUpon>PastaGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuIstatistikGrafikleri\SutunGrafik.resx">
+      <DependentUpon>SutunGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuIstatistikGrafikleri\SütunGrafik1.resx">
+      <DependentUpon>SütunGrafik1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -216,10 +257,22 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DBYemekhaneDataSet.xsc">
+      <DependentUpon>DBYemekhaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBYemekhaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBYemekhaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBYemekhaneDataSet.xss">
+      <DependentUpon>DBYemekhaneDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Yemekhane_otomasyon.Entity.Menü.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

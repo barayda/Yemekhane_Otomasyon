@@ -51,7 +51,7 @@
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             this.btnMenuListele = new DevExpress.XtraBars.BarButtonItem();
             this.BtnMenuEkle = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnMenuIstatistikleri = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -102,7 +102,7 @@
             this.barButtonItem18,
             this.btnMenuListele,
             this.BtnMenuEkle,
-            this.barButtonItem6});
+            this.BtnMenuIstatistikleri});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 22;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -280,18 +280,19 @@
             // 
             this.BtnMenuEkle.Caption = "Menü Ekle";
             this.BtnMenuEkle.Id = 20;
-            this.BtnMenuEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.BtnMenuEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnMenuEkle.ImageOptions.Image")));
             this.BtnMenuEkle.Name = "BtnMenuEkle";
             this.BtnMenuEkle.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.BtnMenuEkle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMenuEkle_ItemClick);
             // 
-            // barButtonItem6
+            // BtnMenuIstatistikleri
             // 
-            this.barButtonItem6.Caption = "Menü İstatistikleri";
-            this.barButtonItem6.Id = 21;
-            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.barButtonItem6.Name = "barButtonItem6";
-            this.barButtonItem6.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnMenuIstatistikleri.Caption = "Menü İstatistikleri";
+            this.BtnMenuIstatistikleri.Id = 21;
+            this.BtnMenuIstatistikleri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.BtnMenuIstatistikleri.Name = "BtnMenuIstatistikleri";
+            this.BtnMenuIstatistikleri.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnMenuIstatistikleri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMenuIstatistikleri_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -406,7 +407,7 @@
             // 
             // ribbonPageGroup13
             // 
-            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup13.ItemLinks.Add(this.BtnMenuIstatistikleri);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             // 
             // ribbonPage6
@@ -485,7 +486,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.BarButtonItem BtnMenuEkle;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem BtnMenuIstatistikleri;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
     }
 }
