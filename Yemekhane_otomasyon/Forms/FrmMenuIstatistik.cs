@@ -18,7 +18,7 @@ namespace Yemekhane_otomasyon.Forms
         {
             InitializeComponent();
         }
-        DBYemekhaneEntities db=new DBYemekhaneEntities();
+        DBYemekhaneEntities db = new DBYemekhaneEntities();
         private void GrafikGetir(Control uc)
         {
             PnlGrafikler.Controls.Clear();
@@ -32,7 +32,7 @@ namespace Yemekhane_otomasyon.Forms
             switch (secim)
             {
                 case 1:
-                    Forms.MenuIstatistikGrafikleri.SutunGrafik uc1 = new Forms.MenuIstatistikGrafikleri.SutunGrafik();
+                    Forms.MenuIstatistikGrafikleri.KarZararGrafik uc1 = new Forms.MenuIstatistikGrafikleri.KarZararGrafik();
                     GrafikGetir((Control)uc1);
                     break;
                 case 2:
@@ -46,27 +46,97 @@ namespace Yemekhane_otomasyon.Forms
                 default:
                     PnlGrafikler.Controls.Clear();
                     break;
-            
+
             }
         }
 
         private void FrmMenuIstatistik_Load(object sender, EventArgs e)
         {
-            DataTable dtGrafikler=new DataTable();
+            // LookUpEdit Kodları
+
+            DataTable dtGrafikler = new DataTable();
             dtGrafikler.Columns.Add("ID", typeof(int));
             dtGrafikler.Columns.Add("GrafikAdi", typeof(string));
 
-            dtGrafikler.Rows.Add(1, "Sütun Grafiği");
-            dtGrafikler.Rows.Add(2, "Pasta Grafiği");
-            dtGrafikler.Rows.Add(3, "Çizgi Grafiği");
+            dtGrafikler.Rows.Add(1, "Aylık Kar/Zarar Grafiği");
+            dtGrafikler.Rows.Add(2, "Aylık Kapasite/Tüketim Grafiği");
+            dtGrafikler.Rows.Add(3, "Aylık Maliyet Grafiği");
             lookUpEdit1.Properties.DataSource = dtGrafikler;
-            lookUpEdit1.Properties.DisplayMember = "GrafikAdi"; 
+            lookUpEdit1.Properties.DisplayMember = "GrafikAdi";
             lookUpEdit1.Properties.ValueMember = "ID";
             lookUpEdit1.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo("GrafikAdi", "Grafik Seçimi"));
 
 
-            Forms.MenuIstatistikGrafikleri.SutunGrafik x = new Forms.MenuIstatistikGrafikleri.SutunGrafik();
+            Forms.MenuIstatistikGrafikleri.KarZararGrafik x = new Forms.MenuIstatistikGrafikleri.KarZararGrafik();
             GrafikGetir(x);
+
+            // Panel Kodları
+
+            LblAylikGelir.Text = (db.Menü.Sum(y => y.ToplamKazanc)).ToString() + " TL"; // Aylık Gelir
+            LblAylikMaliyet.Text = (db.Menü.Sum(y => y.ToplamMaliyet)).ToString() + " TL";// Aylık Maliyet
+
+            // En Maliyetli Menü
+            var menu = (from x1 in db.Menü
+                        orderby x1.ToplamMaliyet descending
+                        select x1).FirstOrDefault();
+            var parcalar = new List<string> {
+                 menu.AnaYemek,
+                    menu.YanYemek,
+                    menu.AraSıcak,
+                    menu.Tatli,
+                    menu.Salata
+    };
+            LblEnMaliyetliMenu.Text = string.Join("\n", parcalar.Where(s => !string.IsNullOrWhiteSpace(s)));
+            LblEnMaliyetliMenuTarih.Text = string.Format("{0:dd.MM.yyyy}", menu.Tarih);
+
+            // En karlı Menü
+            var kar = (from x1 in db.Menü
+                       orderby x1.ToplamKazanc descending
+                       select x1).FirstOrDefault();
+            var karparcalar = new List<string>
+            {
+                kar.AnaYemek,
+                kar.YanYemek,
+                kar.AraSıcak,
+                kar.Tatli,
+                kar.Salata
+            };
+            LblEnKarliMenu.Text = string.Join("\n", karparcalar.Where(s => !string.IsNullOrWhiteSpace(s)));
+            LblEnKarliMenuDate.Text = string.Format("{0:dd.MM.yyyy}", kar.Tarih);
+
+            // En Az Maliyetli Menü
+            var azmaliyet = (from x1 in db.Menü
+                             orderby x1.ToplamMaliyet ascending
+                             select x1).FirstOrDefault();
+            var azmaliyetparcalar = new List<string>
+            {
+                azmaliyet.AnaYemek,
+                azmaliyet.YanYemek,
+                azmaliyet.AraSıcak,
+                azmaliyet.Tatli,
+                azmaliyet.Salata
+            };
+            LblEnAzMaliyetliMenu.Text = string.Join("\n", azmaliyetparcalar.Where(s => !string.IsNullOrWhiteSpace(s)));
+            LblEnAzMaliyetliMenuDate.Text = string.Format("{0:dd.MM.yyyy}", azmaliyet.Tarih);
+
+            //En Fazla Satılan Menü
+            var fazlasatilan = (from x1 in db.Menü
+                                orderby x1.YiyenKisiSayisi descending
+                                select x1).FirstOrDefault();
+            var fazlasatilanparcalar = new List<string>
+            {
+                fazlasatilan.AnaYemek,
+                fazlasatilan.YanYemek,
+                fazlasatilan.AraSıcak,
+                fazlasatilan.Tatli,
+                fazlasatilan.Salata
+            };
+            LblEnFazlaTuketilenMenu.Text = string.Join("\n", fazlasatilanparcalar.Where(s => !string.IsNullOrWhiteSpace(s)));
+            LblEnFazlaTuketilenMenuDate.Text = string.Format("{0:dd.MM.yyyy}", fazlasatilan.Tarih);
+
+
+
+
         }
     }
 }

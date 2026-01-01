@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -112,6 +113,50 @@ namespace Yemekhane_otomasyon
                 frm10.MdiParent = this;
                 frm10.Show();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LblClose.Parent = ribbonControl1;
+            LblClose.BackColor = Color.Transparent;
+            LblGirisEkrani.Parent = ribbonControl1;
+            
+          }
+
+        private void LblClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void LblClose_MouseHover(object sender, EventArgs e)
+        {
+            LblClose.ForeColor = Color.FromArgb(0,0,0);
+        }
+
+        private void LblClose_MouseLeave(object sender, EventArgs e)
+        {
+            LblClose.ForeColor = Color.FromArgb(255,255,255);
+        }
+
+        private void LblGirisEkrani_Click(object sender, EventArgs e)
+        {
+            DialogResult secim = MessageBox.Show("Giriş Ekranına Dönmek İstediğinize Emin Misiniz ?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (secim == DialogResult.Yes)
+            {
+                this.Close();
+                Forms.LoginForm frm = new Forms.LoginForm();
+                frm.Show();
+                
+            }
+        }
+
+        private void LblGirisEkrani_MouseHover(object sender, EventArgs e)
+        {
+            LblGirisEkrani.ForeColor = Color.FromArgb(0, 0, 0);
+        }
+
+        private void LblGirisEkrani_MouseLeave(object sender, EventArgs e)
+        {
+            LblGirisEkrani.ForeColor = Color.FromArgb(255, 255, 255);
         }
     }
 }

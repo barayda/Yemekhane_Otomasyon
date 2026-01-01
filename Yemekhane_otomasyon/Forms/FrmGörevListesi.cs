@@ -37,10 +37,7 @@ namespace Yemekhane_otomasyon.Forms
 
             chartControl1.Series["Durum"].Points.AddPoint("Aktif Görevler", int.Parse(LblAktifGörevSayisi.Text));
             chartControl1.Series["Durum"].Points.AddPoint("Pasif Görevler", int.Parse(LblPasifGörevSayisi.Text));
-
-
-
-
+            
 
         }
 

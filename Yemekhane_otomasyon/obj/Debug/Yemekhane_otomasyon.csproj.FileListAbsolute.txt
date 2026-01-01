@@ -82,5 +82,12 @@ C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\De
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.FrmMenuEkle.resources
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.FrmMenuIstatistik.resources
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.MenuIstatistikGrafikleri.PastaGrafik.resources
-C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.MenuIstatistikGrafikleri.SutunGrafik.resources
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.MenuIstatistikGrafikleri.SütunGrafik1.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.MenuIstatistikGrafikleri.KarZararGrafik.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.LoginForm.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.PersonelLogin.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.adminLogin.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.PersonelEkranıi.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.GorevListesi.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.YanitGonder.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.MenuListelecs.resources

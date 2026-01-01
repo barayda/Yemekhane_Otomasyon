@@ -44,6 +44,8 @@
     <EntitySetMapping Name="Personel">
       <EntityTypeMapping TypeName="DBYemekhaneModel.Personel">
         <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="bakiye" ColumnName="bakiye" />
+          <ScalarProperty Name="Şifre" ColumnName="Şifre" />
           <ScalarProperty Name="Durum" ColumnName="Durum" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />

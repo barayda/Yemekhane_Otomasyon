@@ -122,6 +122,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmAnaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,12 @@
     <Compile Include="Forms\FrmPersoneller.Designer.cs">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MenuIstatistikGrafikleri\PastaGrafik.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -200,10 +212,43 @@
     <Compile Include="Forms\MenuIstatistikGrafikleri\SütunGrafik1.Designer.cs">
       <DependentUpon>SütunGrafik1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PersonelLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelLogin.Designer.cs">
+      <DependentUpon>PersonelLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForm\GorevListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForm\GorevListesi.Designer.cs">
+      <DependentUpon>GorevListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForm\MenuListelecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForm\MenuListelecs.Designer.cs">
+      <DependentUpon>MenuListelecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForm\PersonelEkranıi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForm\PersonelEkranıi.Designer.cs">
+      <DependentUpon>PersonelEkranıi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForm\YanitGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForm\YanitGonder.Designer.cs">
+      <DependentUpon>YanitGonder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmAnaForm.resx">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
@@ -235,6 +280,9 @@
     <EmbeddedResource Include="Forms\FrmPersoneller.resx">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuIstatistikGrafikleri\PastaGrafik.resx">
       <DependentUpon>PastaGrafik.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +291,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuIstatistikGrafikleri\SütunGrafik1.resx">
       <DependentUpon>SütunGrafik1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelLogin.resx">
+      <DependentUpon>PersonelLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm\GorevListesi.resx">
+      <DependentUpon>GorevListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm\MenuListelecs.resx">
+      <DependentUpon>MenuListelecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm\PersonelEkranıi.resx">
+      <DependentUpon>PersonelEkranıi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm\YanitGonder.resx">
+      <DependentUpon>YanitGonder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

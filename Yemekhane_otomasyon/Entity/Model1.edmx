@@ -58,7 +58,7 @@
           <Property Name="Kapasite" Type="int" />
           <Property Name="YiyenKisiSayisi" Type="int" />
           <Property Name="ToplamMaliyet" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="ToplamKazanc" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ToplamKazanc" Type="decimal" Precision="18" Scale="2" />
           <Property Name="KarZarar" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Ogün">
@@ -78,10 +78,12 @@
           <Property Name="Ad" Type="nvarchar" MaxLength="30" />
           <Property Name="Soyad" Type="nvarchar" MaxLength="30" />
           <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Şifre" Type="nvarchar" MaxLength="50" />
           <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
           <Property Name="Görsel" Type="nvarchar" MaxLength="100" />
           <Property Name="Departman" Type="int" />
           <Property Name="Durum" Type="bit" />
+          <Property Name="bakiye" Type="decimal" Precision="17" Scale="2" />
         </EntityType>
         <EntityType Name="Yemekhaneler">
           <Key>
@@ -247,6 +249,8 @@
           <NavigationProperty Name="Gorevler" Relationship="Self.FK_Gorevler_Personel" FromRole="Personel" ToRole="Gorevler" />
           <NavigationProperty Name="Gorevler1" Relationship="Self.FK_Gorevler_Personel1" FromRole="Personel" ToRole="Gorevler" />
           <Property Name="Durum" Type="Boolean" />
+          <Property Name="Şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bakiye" Type="Int32" />
         </EntityType>
         <EntityType Name="Yemekhaneler">
           <Key>
@@ -358,7 +362,7 @@
           <Property Name="YiyenKisiSayisi" Type="Int32" />
           <Property Name="Satis" Type="Decimal" Precision="18" Scale="2" />
           <Property Name="ToplamMaliyet" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="ToplamKazanc" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ToplamKazanc" Type="Decimal" Precision="18" Scale="2" />
           <Property Name="KarZarar" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Ogün">
@@ -432,6 +436,8 @@
           <EntitySetMapping Name="Personel">
             <EntityTypeMapping TypeName="DBYemekhaneModel.Personel">
               <MappingFragment StoreEntitySet="Personel">
+                <ScalarProperty Name="bakiye" ColumnName="bakiye" />
+                <ScalarProperty Name="Şifre" ColumnName="Şifre" />
                 <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />

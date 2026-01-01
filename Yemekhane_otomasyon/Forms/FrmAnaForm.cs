@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraToolbox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,7 @@ namespace Yemekhane_otomasyon.Forms
         }
         DBYemekhaneEntities db = new DBYemekhaneEntities();
 
+        DateTime tdy=DateTime.Today;
         private void FrmAnaForm_Load(object sender, EventArgs e)
         {
 
@@ -30,6 +32,17 @@ namespace Yemekhane_otomasyon.Forms
                 GorevAlan=x.Personel1.Ad+" "+x.Personel1.Soyad
 
             }).ToList();
+            gridControl2.DataSource = (from y in db.Menü where y.Tarih==tdy select new
+            {
+                Öğün=y.Ogün.Ad,
+                y.AnaYemek,
+                y.YanYemek,
+                y.AraSıcak,
+                y.Tatli,
+                y.Salata,
+                y.Tarih
+            }).ToList();
+
         }
     }
 }

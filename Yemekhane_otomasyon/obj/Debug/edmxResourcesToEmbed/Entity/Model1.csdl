@@ -56,6 +56,8 @@
     <NavigationProperty Name="Gorevler" Relationship="Self.FK_Gorevler_Personel" FromRole="Personel" ToRole="Gorevler" />
     <NavigationProperty Name="Gorevler1" Relationship="Self.FK_Gorevler_Personel1" FromRole="Personel" ToRole="Gorevler" />
     <Property Name="Durum" Type="Boolean" />
+    <Property Name="Şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="bakiye" Type="Int32" />
   </EntityType>
   <EntityType Name="Yemekhaneler">
     <Key>
@@ -167,7 +169,7 @@
     <Property Name="YiyenKisiSayisi" Type="Int32" />
     <Property Name="Satis" Type="Decimal" Precision="18" Scale="2" />
     <Property Name="ToplamMaliyet" Type="Decimal" Precision="18" Scale="2" />
-    <Property Name="ToplamKazanc" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ToplamKazanc" Type="Decimal" Precision="18" Scale="2" />
     <Property Name="KarZarar" Type="Decimal" Precision="18" Scale="2" />
   </EntityType>
   <EntityType Name="Ogün">
