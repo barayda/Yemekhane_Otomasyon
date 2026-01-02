@@ -41,9 +41,9 @@ namespace Yemekhane_otomasyon.PersonelForm
 
             int aktifKullaniciID = KullaniciOturumu.KullaniciID;
             LblBakiye.Text=((db.Personel.Where(x=>x.ID==aktifKullaniciID).Select(x=>x.bakiye).FirstOrDefault()).ToString())+" TL";
-            LblKahvaltıFiyat.Text=((db.Menü.Where(x=>x.OgunID==1).Select(x=>x.Satis).FirstOrDefault()).ToString())+" TL";
-            LblOglenFiyat.Text = ((db.Menü.Where(x => x.OgunID == 2).Select(x => x.Satis).FirstOrDefault()).ToString())+" TL";
-            LblAksamFiyat.Text = ((db.Menü.Where(x => x.OgunID == 3).Select(x => x.Satis).FirstOrDefault()).ToString())+" TL";
+            LblKahvaltıFiyat.Text=((db.Menü.Where(x=>x.OgunID==1&&x.Tarih==tdy).Select(x=>x.Satis).FirstOrDefault()).ToString())+" TL";
+            LblOglenFiyat.Text = ((db.Menü.Where(x => x.OgunID == 2 && x.Tarih == tdy).Select(x => x.Satis).FirstOrDefault()).ToString())+" TL";
+            LblAksamFiyat.Text = ((db.Menü.Where(x => x.OgunID == 3 && x.Tarih == tdy).Select(x => x.Satis).FirstOrDefault()).ToString())+" TL";
 
         }
     }

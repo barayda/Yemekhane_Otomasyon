@@ -91,3 +91,6 @@ C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\De
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.GorevListesi.resources
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.YanitGonder.resources
 C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.MenuListelecs.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.Yemekhaneler.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.PersonelForm.YemekhaneEkle.resources
+C:\Users\baray\Desktop\ntp_lesson\yemekhane_otomasyon\Yemekhane_otomasyon\obj\Debug\Yemekhane_otomasyon.Forms.YemekhaneIstatistikler.resources

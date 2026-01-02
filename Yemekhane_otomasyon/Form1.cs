@@ -117,6 +117,9 @@ namespace Yemekhane_otomasyon
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Forms.Yemekhaneler frm=new Forms.Yemekhaneler();
+            frm.MdiParent = this;
+            frm.Show();
             LblClose.Parent = ribbonControl1;
             LblClose.BackColor = Color.Transparent;
             LblGirisEkrani.Parent = ribbonControl1;
@@ -157,6 +160,36 @@ namespace Yemekhane_otomasyon
         private void LblGirisEkrani_MouseLeave(object sender, EventArgs e)
         {
             LblGirisEkrani.ForeColor = Color.FromArgb(255, 255, 255);
+        }
+        Forms.Yemekhaneler frm11;
+        private void BtnYemekhaneListele_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(frm11==null || frm1.IsDisposed)
+            {
+                frm11=new Forms.Yemekhaneler();
+                frm11.MdiParent = this;
+                frm11.Show();
+            }
+        }
+        PersonelForm.YemekhaneEkle frm12;
+        private void BtnYemekhaneEkle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm12 == null || frm12.IsDisposed)
+            {
+                frm12=new PersonelForm.YemekhaneEkle();
+                frm12.MdiParent = this;
+                frm12.Show();
+            }
+        }
+        Forms.YemekhaneIstatistikler frm13;
+        private void BtnYemekhaneIstatikleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(frm13==null || frm13.IsDisposed)
+            {
+                frm13 = new Forms.YemekhaneIstatistikler();
+                frm13.MdiParent = this;
+                frm13.Show();
+            }
         }
     }
 }

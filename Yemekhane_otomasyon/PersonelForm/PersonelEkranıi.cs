@@ -62,13 +62,18 @@ namespace Yemekhane_otomasyon.PersonelForm
                 frm1.Show();
             }
         }
-
+        PersonelForm.GorevListesi frm10;
         private void PersonelEkranıi_Load(object sender, EventArgs e)
         {
-            LblClose.Parent = ribbonControl1;
-            LblClose.BackColor = Color.Transparent;
-            LblGirisEkrani.Parent = ribbonControl1;
-
+            if (!frm10.IsDisposed || frm10 == null)
+            {
+                frm10 = new PersonelForm.GorevListesi();
+                frm1.MdiParent = this;
+                frm1.Show();
+                LblClose.Parent = ribbonControl1;
+                LblClose.BackColor = Color.Transparent;
+                LblGirisEkrani.Parent = ribbonControl1;
+            }
         }
         PersonelForm.YanitGonder frm2;
         private void BtnGorevYanitla_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

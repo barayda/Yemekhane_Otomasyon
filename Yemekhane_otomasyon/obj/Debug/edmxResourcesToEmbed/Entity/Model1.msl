@@ -60,6 +60,10 @@
     <EntitySetMapping Name="Yemekhaneler">
       <EntityTypeMapping TypeName="DBYemekhaneModel.Yemekhaneler">
         <MappingFragment StoreEntitySet="Yemekhaneler">
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Kar" ColumnName="Kar" />
+          <ScalarProperty Name="Maliyet" ColumnName="Maliyet" />
+          <ScalarProperty Name="Gelir" ColumnName="Gelir" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="Yetkili" ColumnName="Yetkili" />
@@ -99,6 +103,15 @@
           <ScalarProperty Name="BitisSaati" ColumnName="BitisSaati" />
           <ScalarProperty Name="BaslangicSaati" ColumnName="BaslangicSaati" />
           <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanicilar">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.Kullanicilar">
+        <MappingFragment StoreEntitySet="Kullanicilar">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>

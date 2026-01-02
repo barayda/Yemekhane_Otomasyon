@@ -36,6 +36,14 @@
     <Property Name="Durum" Type="bit" />
     <Property Name="Tarih" Type="date" />
   </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Menü">
     <Key>
       <PropertyRef Name="ID" />
@@ -93,6 +101,10 @@
     <Property Name="İl" Type="nvarchar" MaxLength="20" />
     <Property Name="ilce" Type="nvarchar" MaxLength="30" />
     <Property Name="Adres" Type="nvarchar" MaxLength="200" />
+    <Property Name="Gelir" Type="decimal" Precision="17" Scale="2" />
+    <Property Name="Maliyet" Type="decimal" Precision="17" Scale="2" />
+    <Property Name="Kar" Type="decimal" Precision="17" Scale="2" />
+    <Property Name="Tarih" Type="date" />
   </EntityType>
   <Association Name="FK_GorevDetaylar_Gorevler">
     <End Role="Gorevler" Type="Self.Gorevler" Multiplicity="0..1" />
@@ -159,6 +171,7 @@
     <EntitySet Name="Departmanlar" EntityType="Self.Departmanlar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GorevDetaylar" EntityType="Self.GorevDetaylar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gorevler" EntityType="Self.Gorevler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Menü" EntityType="Self.Menü" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Ogün" EntityType="Self.Ogün" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />

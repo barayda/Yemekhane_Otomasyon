@@ -89,6 +89,9 @@
     <Compile Include="Entity\Gorevler.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\Kullanicilar.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\Menü.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -218,6 +221,18 @@
     <Compile Include="Forms\PersonelLogin.Designer.cs">
       <DependentUpon>PersonelLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\YemekhaneIstatistikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YemekhaneIstatistikler.Designer.cs">
+      <DependentUpon>YemekhaneIstatistikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Yemekhaneler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Yemekhaneler.Designer.cs">
+      <DependentUpon>Yemekhaneler.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonelForm\GorevListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +256,12 @@
     </Compile>
     <Compile Include="PersonelForm\YanitGonder.Designer.cs">
       <DependentUpon>YanitGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForm\YemekhaneEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForm\YemekhaneEkle.Designer.cs">
+      <DependentUpon>YemekhaneEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -295,6 +316,12 @@
     <EmbeddedResource Include="Forms\PersonelLogin.resx">
       <DependentUpon>PersonelLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YemekhaneIstatistikler.resx">
+      <DependentUpon>YemekhaneIstatistikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Yemekhaneler.resx">
+      <DependentUpon>Yemekhaneler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PersonelForm\GorevListesi.resx">
       <DependentUpon>GorevListesi.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelForm\YanitGonder.resx">
       <DependentUpon>YanitGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm\YemekhaneEkle.resx">
+      <DependentUpon>YemekhaneEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

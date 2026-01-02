@@ -31,10 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonelLogin));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.LblBack = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.LblClose = new DevExpress.XtraEditors.LabelControl();
             this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -47,8 +49,6 @@
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtLogin = new DevExpress.XtraEditors.TextEdit();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.LblClose = new DevExpress.XtraEditors.LabelControl();
-            this.LblBack = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -82,6 +82,21 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(490, 523);
             this.panelControl1.TabIndex = 1;
+            // 
+            // LblBack
+            // 
+            this.LblBack.Appearance.Font = new System.Drawing.Font("Franklin Gothic Book", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblBack.Appearance.ForeColor = System.Drawing.Color.White;
+            this.LblBack.Appearance.Options.UseFont = true;
+            this.LblBack.Appearance.Options.UseForeColor = true;
+            this.LblBack.Location = new System.Drawing.Point(38, 26);
+            this.LblBack.Name = "LblBack";
+            this.LblBack.Size = new System.Drawing.Size(11, 24);
+            this.LblBack.TabIndex = 8;
+            this.LblBack.Text = "<";
+            this.LblBack.Click += new System.EventHandler(this.LblBack_Click);
+            this.LblBack.MouseLeave += new System.EventHandler(this.LblBack_MouseLeave);
+            this.LblBack.MouseHover += new System.EventHandler(this.LblBack_MouseHover);
             // 
             // labelControl2
             // 
@@ -132,6 +147,19 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(498, 523);
             this.panelControl2.TabIndex = 2;
+            // 
+            // LblClose
+            // 
+            this.LblClose.Appearance.Font = new System.Drawing.Font("Franklin Gothic Book", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblClose.Appearance.Options.UseFont = true;
+            this.LblClose.Location = new System.Drawing.Point(440, 26);
+            this.LblClose.Name = "LblClose";
+            this.LblClose.Size = new System.Drawing.Size(10, 24);
+            this.LblClose.TabIndex = 7;
+            this.LblClose.Text = "X";
+            this.LblClose.Click += new System.EventHandler(this.LblClose_Click);
+            this.LblClose.MouseLeave += new System.EventHandler(this.LblClose_MouseLeave);
+            this.LblClose.MouseHover += new System.EventHandler(this.LblClose_MouseHover);
             // 
             // hyperlinkLabelControl1
             // 
@@ -255,34 +283,6 @@
             this.TxtLogin.Size = new System.Drawing.Size(263, 20);
             this.TxtLogin.TabIndex = 3;
             // 
-            // LblClose
-            // 
-            this.LblClose.Appearance.Font = new System.Drawing.Font("Franklin Gothic Book", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblClose.Appearance.Options.UseFont = true;
-            this.LblClose.Location = new System.Drawing.Point(440, 26);
-            this.LblClose.Name = "LblClose";
-            this.LblClose.Size = new System.Drawing.Size(10, 24);
-            this.LblClose.TabIndex = 7;
-            this.LblClose.Text = "X";
-            this.LblClose.Click += new System.EventHandler(this.LblClose_Click);
-            this.LblClose.MouseLeave += new System.EventHandler(this.LblClose_MouseLeave);
-            this.LblClose.MouseHover += new System.EventHandler(this.LblClose_MouseHover);
-            // 
-            // LblBack
-            // 
-            this.LblBack.Appearance.Font = new System.Drawing.Font("Franklin Gothic Book", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblBack.Appearance.ForeColor = System.Drawing.Color.White;
-            this.LblBack.Appearance.Options.UseFont = true;
-            this.LblBack.Appearance.Options.UseForeColor = true;
-            this.LblBack.Location = new System.Drawing.Point(38, 26);
-            this.LblBack.Name = "LblBack";
-            this.LblBack.Size = new System.Drawing.Size(11, 24);
-            this.LblBack.TabIndex = 8;
-            this.LblBack.Text = "<";
-            this.LblBack.Click += new System.EventHandler(this.LblBack_Click);
-            this.LblBack.MouseLeave += new System.EventHandler(this.LblBack_MouseLeave);
-            this.LblBack.MouseHover += new System.EventHandler(this.LblBack_MouseHover);
-            // 
             // PersonelLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,6 +294,7 @@
             this.Name = "PersonelLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PersonelLogin";
+            this.Load += new System.EventHandler(this.PersonelLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();

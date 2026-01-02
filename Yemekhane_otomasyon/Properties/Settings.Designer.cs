@@ -33,5 +33,41 @@ namespace Yemekhane_otomasyon.Properties {
                 return ((string)(this["DBYemekhaneConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KayitliAd {
+            get {
+                return ((string)(this["KayitliAd"]));
+            }
+            set {
+                this["KayitliAd"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KayitliSifre {
+            get {
+                return ((string)(this["KayitliSifre"]));
+            }
+            set {
+                this["KayitliSifre"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BeniHatirla {
+            get {
+                return ((bool)(this["BeniHatirla"]));
+            }
+            set {
+                this["BeniHatirla"] = value;
+            }
+        }
     }
 }

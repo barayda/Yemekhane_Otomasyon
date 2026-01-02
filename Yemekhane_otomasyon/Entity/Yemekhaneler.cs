@@ -23,5 +23,9 @@ namespace Yemekhane_otomasyon.Entity
         public string İl { get; set; }
         public string ilce { get; set; }
         public string Adres { get; set; }
+        public Nullable<decimal> Gelir { get; set; }
+        public Nullable<decimal> Maliyet { get; set; }
+        public Nullable<decimal> Kar { get; set; }
+        public Nullable<System.DateTime> Tarih { get; set; }
     }
 }

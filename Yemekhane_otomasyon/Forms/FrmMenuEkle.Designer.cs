@@ -32,12 +32,6 @@
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.BtnVazgeç = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.TxtMenüAdet = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtMenuFiyat = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
@@ -46,44 +40,50 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.DateEditTarih = new DevExpress.XtraEditors.DateEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtAnaYemek = new DevExpress.XtraEditors.LookUpEdit();
-            this.TxtYanYemek = new DevExpress.XtraEditors.LookUpEdit();
-            this.TxtAraSicak = new DevExpress.XtraEditors.LookUpEdit();
             this.TxtTatli = new DevExpress.XtraEditors.LookUpEdit();
             this.TxtSalata = new DevExpress.XtraEditors.LookUpEdit();
+            this.TxtAraSicak = new DevExpress.XtraEditors.LookUpEdit();
+            this.TxtYanYemek = new DevExpress.XtraEditors.LookUpEdit();
+            this.TxtAnaYemek = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.LblToplamMaliyet = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtMenuFiyat = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtMenüAdet = new DevExpress.XtraEditors.TextEdit();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.DateEditTarih = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMenüAdet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMenuFiyat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAnaYemek.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtYanYemek.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAraSicak.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtTatli.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSalata.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAraSicak.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYanYemek.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAnaYemek.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMenuFiyat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMenüAdet.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnKaydet
@@ -156,64 +156,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(954, 331);
             this.panelControl1.TabIndex = 22;
-            // 
-            // TxtMenüAdet
-            // 
-            this.TxtMenüAdet.Location = new System.Drawing.Point(584, 85);
-            this.TxtMenüAdet.Name = "TxtMenüAdet";
-            this.TxtMenüAdet.Size = new System.Drawing.Size(94, 20);
-            this.TxtMenüAdet.TabIndex = 28;
-            this.TxtMenüAdet.EditValueChanged += new System.EventHandler(this.TxtMenüAdet_EditValueChanged);
-            // 
-            // pictureEdit9
-            // 
-            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
-            this.pictureEdit9.Location = new System.Drawing.Point(473, 81);
-            this.pictureEdit9.Name = "pictureEdit9";
-            this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit9.Size = new System.Drawing.Size(24, 24);
-            this.pictureEdit9.TabIndex = 29;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(511, 85);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(52, 13);
-            this.labelControl9.TabIndex = 30;
-            this.labelControl9.Text = "Menü Adet";
-            // 
-            // TxtMenuFiyat
-            // 
-            this.TxtMenuFiyat.Location = new System.Drawing.Point(584, 35);
-            this.TxtMenuFiyat.Name = "TxtMenuFiyat";
-            this.TxtMenuFiyat.Size = new System.Drawing.Size(94, 20);
-            this.TxtMenuFiyat.TabIndex = 25;
-            this.TxtMenuFiyat.EditValueChanged += new System.EventHandler(this.TxtMenuFiyat_EditValueChanged);
-            // 
-            // pictureEdit8
-            // 
-            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
-            this.pictureEdit8.Location = new System.Drawing.Point(473, 31);
-            this.pictureEdit8.Name = "pictureEdit8";
-            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit8.Size = new System.Drawing.Size(24, 24);
-            this.pictureEdit8.TabIndex = 26;
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(511, 38);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(53, 13);
-            this.labelControl8.TabIndex = 27;
-            this.labelControl8.Text = "Menü Fiyat";
             // 
             // pictureEdit7
             // 
@@ -299,23 +241,6 @@
             this.labelControl4.TabIndex = 15;
             this.labelControl4.Text = "Yan Yemek";
             // 
-            // DateEditTarih
-            // 
-            this.DateEditTarih.EditValue = null;
-            this.DateEditTarih.Location = new System.Drawing.Point(135, 232);
-            this.DateEditTarih.Name = "DateEditTarih";
-            this.DateEditTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DateEditTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DateEditTarih.Properties.DisplayFormat.FormatString = "";
-            this.DateEditTarih.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.DateEditTarih.Properties.EditFormat.FormatString = "";
-            this.DateEditTarih.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.DateEditTarih.Properties.MaskSettings.Set("mask", "");
-            this.DateEditTarih.Size = new System.Drawing.Size(209, 20);
-            this.DateEditTarih.TabIndex = 12;
-            // 
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
@@ -337,27 +262,6 @@
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Öğün";
             // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(135, 18);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.NullText = "Öğün Seçiniz";
-            this.lookUpEdit1.Properties.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.lookUpEdit1.Properties.TextPadding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.lookUpEdit1.Size = new System.Drawing.Size(209, 20);
-            this.lookUpEdit1.TabIndex = 0;
-            this.lookUpEdit1.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(55, 232);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(24, 13);
-            this.labelControl3.TabIndex = 11;
-            this.labelControl3.Text = "Tarih";
-            // 
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
@@ -371,19 +275,6 @@
             this.pictureEdit2.Size = new System.Drawing.Size(24, 24);
             this.pictureEdit2.TabIndex = 4;
             // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(17, 228);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit3.Size = new System.Drawing.Size(24, 24);
-            this.pictureEdit3.TabIndex = 10;
-            // 
             // labelControl2
             // 
             this.labelControl2.Location = new System.Drawing.Point(55, 57);
@@ -391,42 +282,6 @@
             this.labelControl2.Size = new System.Drawing.Size(53, 13);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Ana Yemek";
-            // 
-            // TxtAnaYemek
-            // 
-            this.TxtAnaYemek.Location = new System.Drawing.Point(135, 57);
-            this.TxtAnaYemek.Name = "TxtAnaYemek";
-            this.TxtAnaYemek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.TxtAnaYemek.Properties.NullText = "";
-            this.TxtAnaYemek.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.TxtAnaYemek.Properties.TextPadding = new System.Windows.Forms.Padding(58, 0, 0, 0);
-            this.TxtAnaYemek.Size = new System.Drawing.Size(209, 20);
-            this.TxtAnaYemek.TabIndex = 1;
-            // 
-            // TxtYanYemek
-            // 
-            this.TxtYanYemek.Location = new System.Drawing.Point(135, 92);
-            this.TxtYanYemek.Name = "TxtYanYemek";
-            this.TxtYanYemek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.TxtYanYemek.Properties.NullText = "";
-            this.TxtYanYemek.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.TxtYanYemek.Properties.TextPadding = new System.Windows.Forms.Padding(58, 0, 0, 0);
-            this.TxtYanYemek.Size = new System.Drawing.Size(209, 20);
-            this.TxtYanYemek.TabIndex = 13;
-            // 
-            // TxtAraSicak
-            // 
-            this.TxtAraSicak.Location = new System.Drawing.Point(135, 127);
-            this.TxtAraSicak.Name = "TxtAraSicak";
-            this.TxtAraSicak.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.TxtAraSicak.Properties.NullText = "";
-            this.TxtAraSicak.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.TxtAraSicak.Properties.TextPadding = new System.Windows.Forms.Padding(58, 0, 0, 0);
-            this.TxtAraSicak.Size = new System.Drawing.Size(209, 20);
-            this.TxtAraSicak.TabIndex = 16;
             // 
             // TxtTatli
             // 
@@ -451,6 +306,55 @@
             this.TxtSalata.Properties.TextPadding = new System.Windows.Forms.Padding(72, 0, 0, 0);
             this.TxtSalata.Size = new System.Drawing.Size(209, 20);
             this.TxtSalata.TabIndex = 22;
+            // 
+            // TxtAraSicak
+            // 
+            this.TxtAraSicak.Location = new System.Drawing.Point(135, 127);
+            this.TxtAraSicak.Name = "TxtAraSicak";
+            this.TxtAraSicak.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.TxtAraSicak.Properties.NullText = "";
+            this.TxtAraSicak.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.TxtAraSicak.Properties.TextPadding = new System.Windows.Forms.Padding(58, 0, 0, 0);
+            this.TxtAraSicak.Size = new System.Drawing.Size(209, 20);
+            this.TxtAraSicak.TabIndex = 16;
+            // 
+            // TxtYanYemek
+            // 
+            this.TxtYanYemek.Location = new System.Drawing.Point(135, 92);
+            this.TxtYanYemek.Name = "TxtYanYemek";
+            this.TxtYanYemek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.TxtYanYemek.Properties.NullText = "";
+            this.TxtYanYemek.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.TxtYanYemek.Properties.TextPadding = new System.Windows.Forms.Padding(58, 0, 0, 0);
+            this.TxtYanYemek.Size = new System.Drawing.Size(209, 20);
+            this.TxtYanYemek.TabIndex = 13;
+            // 
+            // TxtAnaYemek
+            // 
+            this.TxtAnaYemek.Location = new System.Drawing.Point(135, 57);
+            this.TxtAnaYemek.Name = "TxtAnaYemek";
+            this.TxtAnaYemek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.TxtAnaYemek.Properties.NullText = "";
+            this.TxtAnaYemek.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.TxtAnaYemek.Properties.TextPadding = new System.Windows.Forms.Padding(58, 0, 0, 0);
+            this.TxtAnaYemek.Size = new System.Drawing.Size(209, 20);
+            this.TxtAnaYemek.TabIndex = 1;
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(135, 18);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.NullText = "Öğün Seçiniz";
+            this.lookUpEdit1.Properties.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.lookUpEdit1.Properties.TextPadding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.lookUpEdit1.Size = new System.Drawing.Size(209, 20);
+            this.lookUpEdit1.TabIndex = 0;
+            this.lookUpEdit1.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
             // 
             // LblToplamMaliyet
             // 
@@ -485,6 +389,102 @@
             this.labelControl10.TabIndex = 31;
             this.labelControl10.Text = "Toplam Maliyet : ";
             // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(511, 38);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(53, 13);
+            this.labelControl8.TabIndex = 27;
+            this.labelControl8.Text = "Menü Fiyat";
+            // 
+            // pictureEdit8
+            // 
+            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
+            this.pictureEdit8.Location = new System.Drawing.Point(473, 31);
+            this.pictureEdit8.Name = "pictureEdit8";
+            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit8.Size = new System.Drawing.Size(24, 24);
+            this.pictureEdit8.TabIndex = 26;
+            // 
+            // TxtMenuFiyat
+            // 
+            this.TxtMenuFiyat.Location = new System.Drawing.Point(584, 35);
+            this.TxtMenuFiyat.Name = "TxtMenuFiyat";
+            this.TxtMenuFiyat.Size = new System.Drawing.Size(94, 20);
+            this.TxtMenuFiyat.TabIndex = 25;
+            this.TxtMenuFiyat.EditValueChanged += new System.EventHandler(this.TxtMenuFiyat_EditValueChanged);
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(511, 85);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(52, 13);
+            this.labelControl9.TabIndex = 30;
+            this.labelControl9.Text = "Menü Adet";
+            // 
+            // pictureEdit9
+            // 
+            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
+            this.pictureEdit9.Location = new System.Drawing.Point(473, 81);
+            this.pictureEdit9.Name = "pictureEdit9";
+            this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit9.Size = new System.Drawing.Size(24, 24);
+            this.pictureEdit9.TabIndex = 29;
+            // 
+            // TxtMenüAdet
+            // 
+            this.TxtMenüAdet.Location = new System.Drawing.Point(584, 85);
+            this.TxtMenüAdet.Name = "TxtMenüAdet";
+            this.TxtMenüAdet.Size = new System.Drawing.Size(94, 20);
+            this.TxtMenüAdet.TabIndex = 28;
+            this.TxtMenüAdet.EditValueChanged += new System.EventHandler(this.TxtMenüAdet_EditValueChanged);
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(17, 228);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit3.Size = new System.Drawing.Size(24, 24);
+            this.pictureEdit3.TabIndex = 10;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(55, 232);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(24, 13);
+            this.labelControl3.TabIndex = 11;
+            this.labelControl3.Text = "Tarih";
+            // 
+            // DateEditTarih
+            // 
+            this.DateEditTarih.EditValue = null;
+            this.DateEditTarih.Location = new System.Drawing.Point(135, 232);
+            this.DateEditTarih.Name = "DateEditTarih";
+            this.DateEditTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DateEditTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DateEditTarih.Properties.DisplayFormat.FormatString = "";
+            this.DateEditTarih.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.DateEditTarih.Properties.EditFormat.FormatString = "";
+            this.DateEditTarih.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.DateEditTarih.Properties.MaskSettings.Set("mask", "");
+            this.DateEditTarih.Size = new System.Drawing.Size(209, 20);
+            this.DateEditTarih.TabIndex = 12;
+            // 
             // FrmMenuEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,26 +497,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMenüAdet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMenuFiyat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAnaYemek.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtYanYemek.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAraSicak.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtTatli.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSalata.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAraSicak.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYanYemek.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAnaYemek.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMenuFiyat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMenüAdet.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DateEditTarih.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -526,13 +526,9 @@
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
         private DevExpress.XtraEditors.SimpleButton BtnVazgeç;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.DateEdit DateEditTarih;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.LabelControl labelControl7;
@@ -542,19 +538,23 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit TxtMenuFiyat;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit8;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit TxtMenüAdet;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit9;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LookUpEdit TxtAnaYemek;
-        private DevExpress.XtraEditors.LookUpEdit TxtYanYemek;
-        private DevExpress.XtraEditors.LookUpEdit TxtAraSicak;
         private DevExpress.XtraEditors.LookUpEdit TxtTatli;
         private DevExpress.XtraEditors.LookUpEdit TxtSalata;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.PictureEdit pictureEdit10;
         private DevExpress.XtraEditors.LabelControl LblToplamMaliyet;
+        private DevExpress.XtraEditors.TextEdit TxtMenüAdet;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit9;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.TextEdit TxtMenuFiyat;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit8;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.DateEdit DateEditTarih;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit3;
+        private DevExpress.XtraEditors.LookUpEdit TxtAnaYemek;
+        private DevExpress.XtraEditors.LookUpEdit TxtYanYemek;
+        private DevExpress.XtraEditors.LookUpEdit TxtAraSicak;
     }
 }

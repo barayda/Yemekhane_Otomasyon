@@ -33,5 +33,6 @@ namespace Yemekhane_otomasyon.Entity
         public virtual DbSet<Yemekhaneler> Yemekhaneler { get; set; }
         public virtual DbSet<Menü> Menü { get; set; }
         public virtual DbSet<Ogün> Ogün { get; set; }
+        public virtual DbSet<Kullanicilar> Kullanicilar { get; set; }
     }
 }

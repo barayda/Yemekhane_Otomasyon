@@ -52,6 +52,18 @@ namespace Yemekhane_otomasyon.Forms
             var adminvalue = db.Admin.Where(x => x.Kullanici == TxtLogin.Text && x.Sifre == TxtSifre.Text).FirstOrDefault();
             if(adminvalue != null)
             {
+                if (Properties.Settings.Default.BeniHatirla == false) { 
+                DialogResult soru = DevExpress.XtraEditors.XtraMessageBox.Show(
+                    "Giriş Bilgileriniz kaydedilsin mi ?",
+                    "Bilgileri Kaydet",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                    );
+                if (soru == DialogResult.Yes)
+                {
+                    BilgileriKaydet(TxtLogin.Text, TxtSifre.Text);
+                }
+                }
                 Form1 frm = new Form1();
                 frm.Show();
                 this.Hide();
@@ -61,6 +73,26 @@ namespace Yemekhane_otomasyon.Forms
                 XtraMessageBox.Show("Hatalı Giriş Yaptınız ", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+
         }
+        void BilgileriKaydet(string ad, string sifre)
+        {
+            Properties.Settings.Default.KayitliAd = ad;
+            Properties.Settings.Default.KayitliSifre = sifre;
+            Properties.Settings.Default.BeniHatirla = true;
+            Properties.Settings.Default.Save();
+        }
+
+        private void adminLogin_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.BeniHatirla == true)
+            {
+                TxtLogin.Text = Properties.Settings.Default.KayitliAd;
+                TxtSifre.Text = Properties.Settings.Default.KayitliSifre;
+          
+            }
+        }
+
+       
     }
 }
