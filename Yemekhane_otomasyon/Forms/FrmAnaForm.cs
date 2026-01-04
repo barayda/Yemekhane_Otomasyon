@@ -42,6 +42,15 @@ namespace Yemekhane_otomasyon.Forms
                 y.Salata,
                 y.Tarih
             }).ToList();
+            var d1 = db.Gorevler.Where(x => x.Tarih.Value.Month == tdy.Month).GroupBy(x => x.GörevAlan).OrderByDescending(z => z.Count()).Select(y => y.Key).FirstOrDefault();
+            var adSoyad = db.Personel
+                     .Where(x => x.ID == d1)
+                     .Select(y => y.Ad + " " + y.Soyad)
+                     .FirstOrDefault();
+            LblAyinPersoneli.Text = (adSoyad ?? "----").ToString();
+            LblPersonelSayisi.Text = db.Personel.Count().ToString();
+            LblYemekhaneSayisi.Text = db.Yemekhaneler.Count().ToString();
+            LblEnKarliYemekhane.Text = ((db.Yemekhaneler.OrderByDescending(x => x.Kar).Select(x => x.Ad).FirstOrDefault()) ?? "----").ToString();
 
         }
     }

@@ -164,7 +164,7 @@ namespace Yemekhane_otomasyon
         Forms.Yemekhaneler frm11;
         private void BtnYemekhaneListele_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(frm11==null || frm1.IsDisposed)
+            if(frm11==null || frm11.IsDisposed)
             {
                 frm11=new Forms.Yemekhaneler();
                 frm11.MdiParent = this;
@@ -189,6 +189,16 @@ namespace Yemekhane_otomasyon
                 frm13 = new Forms.YemekhaneIstatistikler();
                 frm13.MdiParent = this;
                 frm13.Show();
+            }
+        }
+        Forms.GorevIstatistikleri frm14;
+        private void BtnGorevIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm14 == null || frm14.IsDisposed)
+            {
+                frm14=new Forms.GorevIstatistikleri();
+                frm14.MdiParent = this;
+                frm14.Show();
             }
         }
     }

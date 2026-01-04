@@ -41,22 +41,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Personel">
-      <EntityTypeMapping TypeName="DBYemekhaneModel.Personel">
-        <MappingFragment StoreEntitySet="Personel">
-          <ScalarProperty Name="bakiye" ColumnName="bakiye" />
-          <ScalarProperty Name="Şifre" ColumnName="Şifre" />
-          <ScalarProperty Name="Durum" ColumnName="Durum" />
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Ad" ColumnName="Ad" />
-          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
-          <ScalarProperty Name="Mail" ColumnName="Mail" />
-          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
-          <ScalarProperty Name="Görsel" ColumnName="Görsel" />
-          <ScalarProperty Name="Departman" ColumnName="Departman" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Yemekhaneler">
       <EntityTypeMapping TypeName="DBYemekhaneModel.Yemekhaneler">
         <MappingFragment StoreEntitySet="Yemekhaneler">
@@ -110,8 +94,27 @@
     <EntitySetMapping Name="Kullanicilar">
       <EntityTypeMapping TypeName="DBYemekhaneModel.Kullanicilar">
         <MappingFragment StoreEntitySet="Kullanicilar">
+          <ScalarProperty Name="AdminMiyim" ColumnName="AdminMiyim" />
+          <ScalarProperty Name="BeniHatirla" ColumnName="BeniHatirla" />
           <ScalarProperty Name="Sifre" ColumnName="Sifre" />
           <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personel">
+      <EntityTypeMapping TypeName="DBYemekhaneModel.Personel">
+        <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="İseBaslamaTarihi" ColumnName="İseBaslamaTarihi" />
+          <ScalarProperty Name="bakiye" ColumnName="bakiye" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Departman" ColumnName="Departman" />
+          <ScalarProperty Name="Görsel" ColumnName="Görsel" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Şifre" ColumnName="Şifre" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>

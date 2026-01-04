@@ -65,7 +65,7 @@ namespace Yemekhane_otomasyon.Forms
                 LblGelir.Text = gelir == 0 ? "-----" : gelir.ToString("N2") + " ₺";
                 LblMaliyet.Text = maliyet == 0 ? "-----" : maliyet.ToString("N2") + " ₺";
                 LblKarZarar.Text = kar.ToString("N2") + " ₺";
-                LblKarZarar.ForeColor = kar >= 0 ? Color.Blue : Color.Red;
+                LblKarZarar.ForeColor = kar >= 0 ? Color.FromArgb(230,126,34) : Color.Red;
             }
 
             decimal secilenKar = db.Yemekhaneler.Where(x => x.Ad == secilenDeger).Sum(x => (decimal?)x.Kar) ?? 0;
@@ -85,7 +85,7 @@ namespace Yemekhane_otomasyon.Forms
                     if (yuzdeFark > 0)
                     {
                         Lblİliski.Text = $"{secilenDeger}, diğerlerine göre %{yuzdeFark:N2} daha karlı.";
-                        Lblİliski.ForeColor = Color.FromArgb(26, 188, 156);
+                        Lblİliski.ForeColor = Color.FromArgb(45,45,45);
                     }
                     else
                     {

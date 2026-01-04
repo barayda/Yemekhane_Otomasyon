@@ -60,7 +60,7 @@ namespace Yemekhane_otomasyon.Forms
             DateTime bugun=DateTime.Today;
             LblBugünAcilanGörevler.Text=db.Gorevler.Count(x=>x.Tarih==bugun).ToString();//Bugün açılan görev sayısı
 
-            var d1  = db.Gorevler.GroupBy(x=>x.GörevAlan).OrderByDescending(z=>z.Count()).Select(y=>y.Key).FirstOrDefault();//Ayın personeli
+            var d1  = db.Gorevler.Where(x=>x.Tarih.Value.Month==bugun.Month).GroupBy(x=>x.GörevAlan).OrderByDescending(z=>z.Count()).Select(y=>y.Key).FirstOrDefault();//Ayın personeli
             var adSoyad = db.Personel
                      .Where(x => x.ID == d1)
                      .Select(y => y.Ad + " " + y.Soyad)

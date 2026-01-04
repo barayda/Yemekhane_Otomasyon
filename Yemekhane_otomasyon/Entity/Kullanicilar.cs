@@ -17,5 +17,7 @@ namespace Yemekhane_otomasyon.Entity
         public int ID { get; set; }
         public string Kullanici { get; set; }
         public string Sifre { get; set; }
+        public Nullable<bool> BeniHatirla { get; set; }
+        public Nullable<bool> AdminMiyim { get; set; }
     }
 }

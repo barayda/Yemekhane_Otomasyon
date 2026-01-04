@@ -191,6 +191,12 @@
     <Compile Include="Forms\FrmPersoneller.Designer.cs">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GorevIstatistikleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GorevIstatistikleri.Designer.cs">
+      <DependentUpon>GorevIstatistikleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,6 +307,9 @@
     <EmbeddedResource Include="Forms\FrmPersoneller.resx">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GorevIstatistikleri.resx">
+      <DependentUpon>GorevIstatistikleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,6 +354,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Entity\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

@@ -40,14 +40,15 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.LblGorevTarih = new DevExpress.XtraEditors.LabelControl();
+            this.LblDurumGorev = new DevExpress.XtraEditors.LabelControl();
+            this.LblAciklama = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.LblPersonelAd = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.LblAciklama = new DevExpress.XtraEditors.LabelControl();
-            this.LblDurumGorev = new DevExpress.XtraEditors.LabelControl();
-            this.LblGorevTarih = new DevExpress.XtraEditors.LabelControl();
+            this.pictureFoto = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridCtrl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -61,6 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFoto.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridCtrl1
@@ -197,8 +199,48 @@
             this.panelControl4.Controls.Add(this.labelControl2);
             this.panelControl4.Location = new System.Drawing.Point(377, 111);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(593, 233);
+            this.panelControl4.Size = new System.Drawing.Size(371, 233);
             this.panelControl4.TabIndex = 8;
+            // 
+            // LblGorevTarih
+            // 
+            this.LblGorevTarih.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblGorevTarih.Appearance.Options.UseFont = true;
+            this.LblGorevTarih.Location = new System.Drawing.Point(35, 200);
+            this.LblGorevTarih.Name = "LblGorevTarih";
+            this.LblGorevTarih.Size = new System.Drawing.Size(10, 23);
+            this.LblGorevTarih.TabIndex = 3;
+            this.LblGorevTarih.Text = "0";
+            // 
+            // LblDurumGorev
+            // 
+            this.LblDurumGorev.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblDurumGorev.Appearance.Options.UseFont = true;
+            this.LblDurumGorev.Location = new System.Drawing.Point(220, 200);
+            this.LblDurumGorev.Name = "LblDurumGorev";
+            this.LblDurumGorev.Size = new System.Drawing.Size(10, 23);
+            this.LblDurumGorev.TabIndex = 2;
+            this.LblDurumGorev.Text = "0";
+            // 
+            // LblAciklama
+            // 
+            this.LblAciklama.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAciklama.Appearance.Options.UseFont = true;
+            this.LblAciklama.Location = new System.Drawing.Point(17, 71);
+            this.LblAciklama.Name = "LblAciklama";
+            this.LblAciklama.Size = new System.Drawing.Size(7, 16);
+            this.LblAciklama.TabIndex = 1;
+            this.LblAciklama.Text = "0";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(17, 18);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(137, 23);
+            this.labelControl2.TabIndex = 0;
+            this.labelControl2.Text = "Görev Detaylar :";
             // 
             // LblPersonelAd
             // 
@@ -254,51 +296,21 @@
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "İyi Günler";
             // 
-            // labelControl2
+            // pictureFoto
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(17, 18);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(137, 23);
-            this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "Görev Detaylar :";
-            // 
-            // LblAciklama
-            // 
-            this.LblAciklama.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblAciklama.Appearance.Options.UseFont = true;
-            this.LblAciklama.Location = new System.Drawing.Point(17, 71);
-            this.LblAciklama.Name = "LblAciklama";
-            this.LblAciklama.Size = new System.Drawing.Size(7, 16);
-            this.LblAciklama.TabIndex = 1;
-            this.LblAciklama.Text = "0";
-            // 
-            // LblDurumGorev
-            // 
-            this.LblDurumGorev.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblDurumGorev.Appearance.Options.UseFont = true;
-            this.LblDurumGorev.Location = new System.Drawing.Point(434, 200);
-            this.LblDurumGorev.Name = "LblDurumGorev";
-            this.LblDurumGorev.Size = new System.Drawing.Size(10, 23);
-            this.LblDurumGorev.TabIndex = 2;
-            this.LblDurumGorev.Text = "0";
-            // 
-            // LblGorevTarih
-            // 
-            this.LblGorevTarih.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblGorevTarih.Appearance.Options.UseFont = true;
-            this.LblGorevTarih.Location = new System.Drawing.Point(260, 200);
-            this.LblGorevTarih.Name = "LblGorevTarih";
-            this.LblGorevTarih.Size = new System.Drawing.Size(10, 23);
-            this.LblGorevTarih.TabIndex = 3;
-            this.LblGorevTarih.Text = "0";
+            this.pictureFoto.Location = new System.Drawing.Point(754, 111);
+            this.pictureFoto.Name = "pictureFoto";
+            this.pictureFoto.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureFoto.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureFoto.Size = new System.Drawing.Size(216, 233);
+            this.pictureFoto.TabIndex = 9;
             // 
             // GorevListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 346);
+            this.Controls.Add(this.pictureFoto);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
@@ -324,6 +336,7 @@
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFoto.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,5 +362,6 @@
         private DevExpress.XtraEditors.LabelControl LblDurumGorev;
         private DevExpress.XtraEditors.LabelControl LblAciklama;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.PictureEdit pictureFoto;
     }
 }

@@ -14,7 +14,7 @@
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Personel" Relationship="Self.FK_Personel_Departmanlar" FromRole="Departmanlar" ToRole="Personel" />
+    <NavigationProperty Name="Personel" Relationship="DBYemekhaneModel.FK_Personel_Departmanlar" FromRole="Departmanlar" ToRole="Personel" />
   </EntityType>
   <EntityType Name="GorevDetaylar">
     <Key>
@@ -38,26 +38,8 @@
     <Property Name="Durum" Type="Boolean" />
     <Property Name="Tarih" Type="DateTime" Precision="0" />
     <NavigationProperty Name="GorevDetaylar" Relationship="Self.FK_GorevDetaylar_Gorevler" FromRole="Gorevler" ToRole="GorevDetaylar" />
-    <NavigationProperty Name="Personel" Relationship="Self.FK_Gorevler_Personel" FromRole="Gorevler" ToRole="Personel" />
-    <NavigationProperty Name="Personel1" Relationship="Self.FK_Gorevler_Personel1" FromRole="Gorevler" ToRole="Personel" />
-  </EntityType>
-  <EntityType Name="Personel">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-    <Property Name="Soyad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-    <Property Name="Görsel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="Departman" Type="Int32" />
-    <NavigationProperty Name="Departmanlar" Relationship="Self.FK_Personel_Departmanlar" FromRole="Personel" ToRole="Departmanlar" />
-    <NavigationProperty Name="Gorevler" Relationship="Self.FK_Gorevler_Personel" FromRole="Personel" ToRole="Gorevler" />
-    <NavigationProperty Name="Gorevler1" Relationship="Self.FK_Gorevler_Personel1" FromRole="Personel" ToRole="Gorevler" />
-    <Property Name="Durum" Type="Boolean" />
-    <Property Name="Şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="bakiye" Type="Int32" />
+    <NavigationProperty Name="Personel" Relationship="DBYemekhaneModel.FK_Gorevler_Personel" FromRole="Gorevler" ToRole="Personel" />
+    <NavigationProperty Name="Personel1" Relationship="DBYemekhaneModel.FK_Gorevler_Personel1" FromRole="Gorevler" ToRole="Personel" />
   </EntityType>
   <EntityType Name="Yemekhaneler">
     <Key>
@@ -77,18 +59,6 @@
     <Property Name="Kar" Type="Decimal" Precision="17" Scale="2" />
     <Property Name="Tarih" Type="DateTime" Precision="0" />
   </EntityType>
-  <Association Name="FK_Personel_Departmanlar">
-    <End Role="Departmanlar" Type="Self.Departmanlar" Multiplicity="0..1" />
-    <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Departmanlar">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Personel">
-        <PropertyRef Name="Departman" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_GorevDetaylar_Gorevler">
     <End Role="Gorevler" Type="Self.Gorevler" Multiplicity="0..1" />
     <End Role="GorevDetaylar" Type="Self.GorevDetaylar" Multiplicity="*" />
@@ -101,52 +71,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Gorevler_Personel">
-    <End Role="Personel" Type="Self.Personel" Multiplicity="0..1" />
-    <End Role="Gorevler" Type="Self.Gorevler" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Personel">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Gorevler">
-        <PropertyRef Name="GörevVeren" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Gorevler_Personel1">
-    <End Role="Personel" Type="Self.Personel" Multiplicity="0..1" />
-    <End Role="Gorevler" Type="Self.Gorevler" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Personel">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Gorevler">
-        <PropertyRef Name="GörevAlan" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="DBYemekhaneEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admin" EntityType="Self.Admin" />
     <EntitySet Name="Departmanlar" EntityType="Self.Departmanlar" />
     <EntitySet Name="GorevDetaylar" EntityType="Self.GorevDetaylar" />
     <EntitySet Name="Gorevler" EntityType="Self.Gorevler" />
-    <EntitySet Name="Personel" EntityType="Self.Personel" />
     <EntitySet Name="Yemekhaneler" EntityType="Self.Yemekhaneler" />
-    <AssociationSet Name="FK_Personel_Departmanlar" Association="Self.FK_Personel_Departmanlar">
-      <End Role="Departmanlar" EntitySet="Departmanlar" />
-      <End Role="Personel" EntitySet="Personel" />
-    </AssociationSet>
     <AssociationSet Name="FK_GorevDetaylar_Gorevler" Association="Self.FK_GorevDetaylar_Gorevler">
       <End Role="Gorevler" EntitySet="Gorevler" />
       <End Role="GorevDetaylar" EntitySet="GorevDetaylar" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Gorevler_Personel" Association="Self.FK_Gorevler_Personel">
-      <End Role="Personel" EntitySet="Personel" />
-      <End Role="Gorevler" EntitySet="Gorevler" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Gorevler_Personel1" Association="Self.FK_Gorevler_Personel1">
-      <End Role="Personel" EntitySet="Personel" />
-      <End Role="Gorevler" EntitySet="Gorevler" />
     </AssociationSet>
     <EntitySet Name="Menü" EntityType="DBYemekhaneModel.Menü" />
     <EntitySet Name="Ogün" EntityType="DBYemekhaneModel.Ogün" />
@@ -155,6 +88,19 @@
       <End Role="Menü" EntitySet="Menü" />
     </AssociationSet>
     <EntitySet Name="Kullanicilar" EntityType="DBYemekhaneModel.Kullanicilar" />
+    <EntitySet Name="Personel" EntityType="DBYemekhaneModel.Personel" />
+    <AssociationSet Name="FK_Personel_Departmanlar" Association="DBYemekhaneModel.FK_Personel_Departmanlar">
+      <End Role="Departmanlar" EntitySet="Departmanlar" />
+      <End Role="Personel" EntitySet="Personel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gorevler_Personel" Association="DBYemekhaneModel.FK_Gorevler_Personel">
+      <End Role="Personel" EntitySet="Personel" />
+      <End Role="Gorevler" EntitySet="Gorevler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gorevler_Personel1" Association="DBYemekhaneModel.FK_Gorevler_Personel1">
+      <End Role="Personel" EntitySet="Personel" />
+      <End Role="Gorevler" EntitySet="Gorevler" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Menü">
     <Key>
@@ -206,5 +152,62 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BeniHatirla" Type="Boolean" />
+    <Property Name="AdminMiyim" Type="Boolean" />
   </EntityType>
+  <EntityType Name="Personel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Şifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Görsel" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Departman" Type="Int32" />
+    <Property Name="Durum" Type="Boolean" />
+    <Property Name="bakiye" Type="Decimal" Precision="17" Scale="2" />
+    <Property Name="İseBaslamaTarihi" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Departmanlar" Relationship="DBYemekhaneModel.FK_Personel_Departmanlar" FromRole="Personel" ToRole="Departmanlar" />
+    <NavigationProperty Name="Gorevler" Relationship="DBYemekhaneModel.FK_Gorevler_Personel" FromRole="Personel" ToRole="Gorevler" />
+    <NavigationProperty Name="Gorevler1" Relationship="DBYemekhaneModel.FK_Gorevler_Personel1" FromRole="Personel" ToRole="Gorevler" />
+  </EntityType>
+  <Association Name="FK_Personel_Departmanlar">
+    <End Type="DBYemekhaneModel.Departmanlar" Role="Departmanlar" Multiplicity="0..1" />
+    <End Type="DBYemekhaneModel.Personel" Role="Personel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departmanlar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Personel">
+        <PropertyRef Name="Departman" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gorevler_Personel">
+    <End Type="DBYemekhaneModel.Personel" Role="Personel" Multiplicity="0..1" />
+    <End Type="DBYemekhaneModel.Gorevler" Role="Gorevler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Gorevler">
+        <PropertyRef Name="GörevVeren" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gorevler_Personel1">
+    <End Type="DBYemekhaneModel.Personel" Role="Personel" Multiplicity="0..1" />
+    <End Type="DBYemekhaneModel.Gorevler" Role="Gorevler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Gorevler">
+        <PropertyRef Name="GörevAlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

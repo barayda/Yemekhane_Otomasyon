@@ -9,16 +9,16 @@
         <EntityTypeShape EntityType="DBYemekhaneModel.Departmanlar" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DBYemekhaneModel.GorevDetaylar" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DBYemekhaneModel.Gorevler" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBYemekhaneModel.Personel" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DBYemekhaneModel.Yemekhaneler" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
-        <AssociationConnector Association="DBYemekhaneModel.FK_Personel_Departmanlar" ManuallyRouted="false" />
         <AssociationConnector Association="DBYemekhaneModel.FK_GorevDetaylar_Gorevler" ManuallyRouted="false" />
-        <AssociationConnector Association="DBYemekhaneModel.FK_Gorevler_Personel" ManuallyRouted="false" />
-        <AssociationConnector Association="DBYemekhaneModel.FK_Gorevler_Personel1" ManuallyRouted="false" />
         <EntityTypeShape EntityType="DBYemekhaneModel.Menü" Width="1.5" PointX="7.625" PointY="5" />
         <EntityTypeShape EntityType="DBYemekhaneModel.Ogün" Width="1.5" PointX="5.375" PointY="5.375" />
         <AssociationConnector Association="DBYemekhaneModel.FK_Menü_Ogün" />
         <EntityTypeShape EntityType="DBYemekhaneModel.Kullanicilar" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DBYemekhaneModel.Personel" Width="1.5" PointX="3" PointY="9.875" />
+        <AssociationConnector Association="DBYemekhaneModel.FK_Personel_Departmanlar" />
+        <AssociationConnector Association="DBYemekhaneModel.FK_Gorevler_Personel" />
+        <AssociationConnector Association="DBYemekhaneModel.FK_Gorevler_Personel1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

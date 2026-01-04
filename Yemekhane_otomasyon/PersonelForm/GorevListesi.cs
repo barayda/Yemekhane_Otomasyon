@@ -5,12 +5,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Yemekhane_otomasyon.Entity;
 using static Yemekhane_otomasyon.Forms.PersonelLogin;
+using System.IO;
 namespace Yemekhane_otomasyon.PersonelForm
 {
     public partial class GorevListesi : Form
@@ -63,6 +65,29 @@ namespace Yemekhane_otomasyon.PersonelForm
                 LblPersonelAd.Text = tamAd; 
             }
             IstatistikleriGetir();
+            PersonelfotosuGetir();
+            
+        }
+        private void PersonelfotosuGetir()
+        {
+            var personel = db.Personel.FirstOrDefault(x => x.ID == KullaniciOturumu.KullaniciID);
+            if (personel!=null && personel.Görsel!=null)
+            {
+                try { 
+                using (MemoryStream ms=new MemoryStream(personel.Görsel))
+                {
+                    pictureFoto.Image=Image.FromStream(ms);
+                }
+                }
+                catch
+                {
+                    pictureFoto.Image = Properties.Resources.Ekran_görüntüsü_2026_01_04_173957;
+                }
+            }
+            else
+            {
+                pictureFoto.Image = Properties.Resources.Ekran_görüntüsü_2026_01_04_173957;
+            }
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)

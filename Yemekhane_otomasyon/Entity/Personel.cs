@@ -25,12 +25,13 @@ namespace Yemekhane_otomasyon.Entity
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string Mail { get; set; }
+        public string Şifre { get; set; }
         public string Telefon { get; set; }
-        public string Görsel { get; set; }
+        public byte[] Görsel { get; set; }
         public Nullable<int> Departman { get; set; }
         public Nullable<bool> Durum { get; set; }
-        public string Şifre { get; set; }
-        public Nullable<int> bakiye { get; set; }
+        public Nullable<decimal> bakiye { get; set; }
+        public Nullable<System.DateTime> İseBaslamaTarihi { get; set; }
     
         public virtual Departmanlar Departmanlar { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

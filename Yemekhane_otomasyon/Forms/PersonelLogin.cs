@@ -54,49 +54,78 @@ namespace Yemekhane_otomasyon.Forms
 
         private void BtnGirisYap_Click(object sender, EventArgs e)
         {
+
             var adminvalue = db.Personel.Where(x => x.Mail == TxtLogin.Text && x.Şifre == TxtSifre.Text).FirstOrDefault();
-            if (adminvalue != null)
+            if (adminvalue != null )
             {
-                if (Properties.Settings.Default.BeniHatirla == false)
+                var hatirlananKayit = db.Kullanicilar.FirstOrDefault(x => x.Kullanici == TxtLogin.Text);
+                
+                
+                if (hatirlananKayit == null || hatirlananKayit.BeniHatirla == false)
                 {
                     DialogResult soru = DevExpress.XtraEditors.XtraMessageBox.Show(
-                        "Giriş Bilgileriniz kaydedilsin mi ?",
-                        "Bilgileri Kaydet",
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Question
-                        );
+                    "Giriş Bilgileriniz kaydedilsin mi ?",
+                    "Bilgileri Kaydet",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+
+                    );
                     if (soru == DialogResult.Yes)
                     {
                         BilgileriKaydet(TxtLogin.Text, TxtSifre.Text);
                     }
                 }
-                KullaniciOturumu.KullaniciID = adminvalue.ID; 
-                KullaniciOturumu.KullaniciAdi = adminvalue.Ad;
+
+                KullaniciOturumu.KullaniciID = adminvalue.ID;
+                KullaniciOturumu.KullaniciAdi = adminvalue.Ad + " " + adminvalue.Soyad;
                 PersonelForm.PersonelEkranıi frm = new PersonelForm.PersonelEkranıi();
                 frm.Show();
                 this.Hide();
+
+              
+           
             }
             else
             {
                 XtraMessageBox.Show("Hatalı Giriş Yaptınız ", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-           
+
         }
         void BilgileriKaydet(string ad, string sifre)
         {
-            Properties.Settings.Default.KayitliAd = ad;
-            Properties.Settings.Default.KayitliSifre = sifre;
-            Properties.Settings.Default.BeniHatirla = true;
-            Properties.Settings.Default.Save();
+            var kullanici = db.Kullanicilar.FirstOrDefault(x => x.Kullanici == ad);
+            if (kullanici == null)
+            {
+                Kullanicilar t = new Kullanicilar();
+                t.Kullanici = ad;
+                t.Sifre = sifre;
+                t.BeniHatirla = true;
+                t.AdminMiyim = false;
+                db.Kullanicilar.Add(t);
+            }
+            else
+            {
+                kullanici.Sifre = sifre;
+                kullanici.BeniHatirla = true;
+                kullanici.AdminMiyim= true;
+            }
+            db.SaveChanges();
         }
         private void PersonelLogin_Load(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.BeniHatirla == true)
-            {
-                TxtLogin.Text = Properties.Settings.Default.KayitliAd;
-                TxtSifre.Text = Properties.Settings.Default.KayitliSifre;
+            var kullaniciListesi = db.Kullanicilar.Select(x => x.Kullanici).ToArray();
 
+            AutoCompleteStringCollection liste = new AutoCompleteStringCollection();
+            liste.AddRange(kullaniciListesi);
+            TxtLogin.MaskBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            TxtLogin.MaskBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            TxtLogin.MaskBox.AutoCompleteCustomSource = liste;
+            var sonKullanici = db.Kullanicilar.Where(z => z.BeniHatirla == true).OrderByDescending(y => y.ID).FirstOrDefault();
+            if (sonKullanici != null)
+            {
+                TxtLogin.Text = sonKullanici.Kullanici;
+                TxtSifre.Text = sonKullanici.Sifre;
             }
         }
     }
